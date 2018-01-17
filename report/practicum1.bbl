@@ -1,0 +1,49 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citename{Akhtar {\em et~al.\ }\relax, }2013]{Akhtar2013}
+{\sc Akhtar, Waseem, {De Jong}, Johann, Pindyurin, Alexey~V., Pagie, Ludo,
+  Meuleman, Wouter, {De Ridder}, Jeroen, Berns, Anton, Wessels, Lodewyk F~A,
+  {Van Lohuizen}, Maarten, \& {Van Steensel}, Bas}. 2013.
+\newblock {Chromatin position effects assayed by thousands of reporters
+  integrated in parallel}.
+\newblock {\em Cell}, {\bf 154}(4), 914--927.
+
+\bibitem[\protect\citename{Akhtar {\em et~al.\ }\relax, }2014]{Akhtar2014}
+{\sc Akhtar, Waseem, {Pindyurin V}, Alexey, de~Jong, Johann, Pagie, Ludo, ten
+  Hoeve, Jelle, Berns, Anton, {Wessels FA}, Lodewyk, van Steensel, Bas, \& van
+  Lohuizen, Maarten}. 2014.
+\newblock {Using TRIP for genome-wide position effect analysis in cultured
+  cells}.
+\newblock {\em Nature Protocols}, {\bf 9}(6), 1255--1281.
+
+\bibitem[\protect\citename{Corrales, }2017]{corralesphd}
+{\sc Corrales, Marc}. 2017.
+\newblock {\em Text in context: Chromatin effects in gene regulation}.
+\newblock Ph.D. thesis, Universitat Pompeu Fabra.
+
+\bibitem[\protect\citename{Corrales {\em et~al.\ }\relax, }2017]{Corrales2017}
+{\sc Corrales, Marc, Rosado, Ar{\'{a}}nzazu, Cortini, Ruggero, van Arensbergen,
+  Joris, van Steensel, Bas, \& Filion, Guillaume~J}. 2017.
+\newblock {Clustering of \textit{Drosophila} housekeeping promoters facilitates
+  their expression}.
+\newblock {\em Genome research}, {\bf 27}(7), 1153--1161.
+
+\bibitem[\protect\citename{Elgin \& Reuter, }2013]{Elgin2013}
+{\sc Elgin, Sarah C~R, \& Reuter, Gunter}. 2013.
+\newblock {Position-Effect Variegation, Heterochromatin Formation , and Gene
+  Silencing in Drosophila}.
+\newblock {\em Cold Spring Harbor Perspectives in Biology}, {\bf 5}, 1--26.
+
+\bibitem[\protect\citename{M{\'{a}}t{\'{e}}s {\em et~al.\ }\relax,
+  }2009]{Mates2009}
+{\sc M{\'{a}}t{\'{e}}s, Lajos, Chuah, Marinee K~L, Belay, Eyayu, Jerchow,
+  Boris, Manoj, Namitha, Acosta-Sanchez, Abel, Grzela, Dawid~P., Schmitt,
+  Andrea, Becker, Katja, Matrai, Janka, Ma, Ling, Samara-Kuko, Ermira,
+  Gysemans, Conny, Pryputniewicz, Diana, Miskey, Csaba, Fletcher, Bradley,
+  Vandendriessche, Thierry, Ivics, Zolt{\'{a}}n, \& Izsv{\'{a}}k, Zsuzsanna}.
+  2009.
+\newblock {Molecular evolution of a novel hyperactive Sleeping Beauty
+  transposase enables robust stable gene transfer in vertebrates}.
+\newblock {\em Nature Genetics}, {\bf 41}(6), 753--761.
+
+\end{thebibliography}

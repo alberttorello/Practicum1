@@ -1,0 +1,353 @@
+\documentclass[12pt,a4paper,oneside]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2.00cm, right=2.00cm, top=2.00cm, bottom=2cm]{geometry}
+\usepackage{lastpage}
+\usepackage{float}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\rhead{Torelló Pérez, Albert}
+\chead{}
+\lhead{
+            \includegraphics[width=0.3\linewidth]{cap}
+}
+\lfoot{Pràcticum I}
+\cfoot{}
+\rfoot{\thepage \ de \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\addtolength{\headheight}{20pt} % espacio para la
+\raggedbottom
+\providecommand{\tabularnewline}{\\}
+
+\usepackage{array}
+
+\usepackage{titlesec}
+
+\titleformat{\section}[block]{\flushleft}{\LARGE\bfseries\thesection  . }{0em}{\LARGE\bfseries}{}
+
+% Lletres gregues
+\DeclareRobustCommand{\greektext}{%
+	\fontencoding{LGR}\selectfont\def\encodingdefault{LGR}}
+\DeclareRobustCommand{\textgreek}[1]{\leavevmode{\greektext #1}}
+\DeclareFontEncoding{LGR}{}{}
+\DeclareTextSymbol{\~}{LGR}{126}
+
+\usepackage{hyperref}
+
+\usepackage[round]{natbib}
+
+\usepackage{pdfpages}
+\title{\Huge \bf Pràcticum I. Final Report}
+\date{}
+
+\begin{document}
+\vspace{-2cm}
+\maketitle
+\thispagestyle{fancy}
+\vspace{-2.7cm}
+\begin{table}[H]
+\begin{tabular}{c>{\centering}p{3cm}|c>{\centering}p{5cm}}
+\hline 
+\textbf{Nom} & Albert Torelló Pérez & \textbf{Data matriculació PI} & 6-9-2017\tabularnewline
+\textbf{Grau} & Ciències Biomèdiques & \textbf{Grup de recerca} & Genome Archtecture; Gene Regulation, Stem Cells and Cancer Programme;
+Centre for Genomic Regulation\tabularnewline
+\textbf{Període de realització} & 1st Semester 2017 & \textbf{Correu electrònic} & alberttorelloperez@gmail.com\tabularnewline
+\textbf{Data d'entrega} &  & \textbf{Tutor extern} & Dr. Guillaume Filion\tabularnewline
+\textbf{Tutor intern} & Dr. Ferran Reverter &  & \tabularnewline
+\hline 
+\end{tabular}
+\end{table}
+
+\section{Introduction}
+%En aquesta introducció ha de figurar una breu descripció del lloc on s?ha realitzat el pràcticum; en què va consistir aquest pràcticum, així com el propòsit general de l?entitat on hi participes.
+\subsection{Mission of the CRG}
+The Centre for Genomic Regulation (CRG) is an international biomedical research institute of excellence, created in December 2000. It is a non-profit foundation funded by the Catalan Government through the Departments of Economy \& Knowledge and Health, the Spanish Ministry of Economy, Industry and Competitiveness, the "la Caixa" Banking Foundation, and includes the participation of Pompeu Fabra University.
+
+The mission of the CRG is to discover and advance knowledge for the benefit of society, public health and economic prosperity.
+The CRG believes that the medicine of the future depends on the ground-breaking science of today. This requires an interdisciplinary scientific team focused on understanding the complexity of life from the genome to the cell to a whole organism and its interaction with the environment, offering an integrated view of genetic diseases.
+
+\subsection{Genome Architecture Lab}
+The Genome Architecture Laboratory was established in 2012 by Dr Guillaume Filion, who also supervised the work presented in this report.
+
+During this period, there has been established several research lines, but they have in common one thing: they are all focused on the understanding the chromatin and topology effects on gene expression and nuclear biology. As the sequence is not enough to explain the variation in gene expression, there is a need to identify the other factors involved in transcription.
+
+The most important research lines, among others not named, are:
+\begin{itemize}
+\item Position-dependent effects on housekeeping promoters in \textit{Drosophila}.
+\item Position effects on HIV integration and expression.
+\item Polymer physics of chromatin and properties of transcription factors mechanics.
+\item Nuclear organization by progesterone receptor and oestrogen receptor in breast cancer cells
+\end{itemize}
+
+\subsection{Purpose of the project}
+The aim of the project (not only of this practicum) is to understand the factors involved in the expression of a housekeeping promoter integrated into heterochromatin regions \citep{Corrales2017}. 
+
+To do that, I made use of TRIP technology. Briefly, TRIP consists in the use of a library of barcoded reporters (reporters with a 20-mer random sequence) that are integrated randomly in the genome using a transposase. This system allows us to relate the expression of each unique reporter to a location in the genome. Using this technology enable us to study the position effects in a high-throughput way \citep{Akhtar2013,Akhtar2014}.
+
+To address the question below, I cloned a barcoded before the poli-A tail. I amplified the library using electrocompetent \textit{E. coli} cells and cotransfected it into Kc167 cells (a Drosophila cell line) with the \textit{Sleeping Beauty} transposase \citep{Mates2009}. After growing the cells, I FACS selected them and seeded 1 cell/well in a 96-well plate and grow them. The goal of this process is to get isogenic populations (cells that come from a single cell progenitor) that putatively contain at least 1 integration.
+
+After growing these clones, I harvested the cells and extract the genomic DNA in order to map the barcodes in the genome. The will of that is to get a clone with at least 2 mapped integrations, 1 in euchromatin and the other one in heterochromatin.
+
+The workflow is summarized in figure \ref{fig:current}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\linewidth]{current.png}
+\caption{Workflow of the project. The green squares represent the GFP integrations}
+\label{fig:current}
+\end{figure}
+
+This will allow us to screen this cells for factors involved in heterochromatic expression of this promoter of interest.
+
+\subsection{Position effects variegation}
+As this practicum aims to disentangle the mechanisms of a position effects event, it is important to properly define it.
+
+Defined by its pioneer Sarah Elgin, position effects variegation (PEV) results when a gene normally in euchromatin is juxtaposed with heterochromatin rearrangement or transposition. When heterochromatin packaging spreads across the heterochromatin/euchromatin border, it causes transcriptional silencing in a stochastic pattern. PEV is intensely studied in \textit{Drosophila} using the \textit{white} gene \citep{Elgin2013}.
+
+Traditionally, the definition of heterochromatin was mainly cytological. Heterochromatin was defined as such regions that appeared electrodense in transmission electron microscopy experiments.
+
+
+\subsection{The TRIP technology}
+
+
+\section{Objectives and activities}\label{sec:objectives}
+%Punts a tractar:
+%
+%?	Objectius del projecte de treball 
+%
+%?	Grau de coincidència amb la sol?licitud que vas fer
+%
+%?	Descripció de cadascuna de les tasques realitzades. En aquest punt has de proporcionar aquella informació important per facilitar la tasca avaluadora del tutor:
+%
+%- Conceptes científics o tècnics bàsics adquirits en el Grau que has aplicat a aquest pràcticum.
+%
+%- Recerca de documentació que has fet.
+%
+%- Procediments i protocols que has emprat.
+%
+%- Valoració i cura de l'instrumental utilitzat.
+%
+%- Obtenció o Recollida de dades.
+%
+%- Disseny experimental o pla de treball utilitzat.
+%
+%Anàlisi sobre la relació teoria- pràctica durant el període de desenvolupament del projecte
+
+\subsection{Aim of the practicum}
+
+
+\subsection{Barcoding PCR}
+\label{sec:org4b6e281}
+The first step is to do the barcoding PCR according to this protocol:\\
+\begin{center}
+\begin{tabular}{l}
+\hline
+Reagent\\
+\hline
+10 ng plasmid\\
+2.5 uL primer GAT155\\
+2.5 uL primer GAT385\\
+10 uL GC buffer 10x\\
+1 uL dNTPs\\
+0.5 uL Phusion Polymerase\\
+32.5 uL water\\
+\hline
+\end{tabular}
+\end{center}
+
+with this programme:\\
+\begin{center}
+\begin{tabular}{ll}
+\hline
+T & Time\\
+\hline
+98C & 2 min\\
+98C & 15 sec\\
+60C & 20 sec\\
+72C & 5 min\\
+x28 cycles & \\
+72C & 2 min\\
+\hline
+\end{tabular}
+\end{center}
+
+Check the outcome of PCR with 1\% agarose gel.
+
+\subsection{DpnI digestion}
+\label{sec:orgd47708b}
+The recipe is:\\
+\begin{center}
+\begin{tabular}{l}
+\hline
+Reagent\\
+\hline
+45 uL BCR PCR product\\
+5 uL CutSmart Buffer 10x\\
+1 uL DpnI enzyme\\
+\hline
+\end{tabular}
+\end{center}
+
+1h at 37C and 20 min at 80C.\\
+
+\subsection{MinElute kit purification}
+\label{sec:orgc9ff965}
+\begin{enumerate}
+\item Add 5 volumes of PB buffer for 1 volume of PCR product and 10 uL of NaAc 3M.
+\item Put the column in a 2 mL collection tube.
+\item Spin the column 1 min at 13,000 rpm and discard the flow-through.
+\item Add 750 uL of PE buffer and spin at 13,000 rpm for 1 min. Discard the flow-through.
+\item Spin for 2 min and replace the collection tube (1 mL tube).
+\item Elute in 10+10 uL EB buffer. Wait 5 min and spin for 1 min.
+\end{enumerate}
+
+\subsection{Gibson Cloning}
+\label{sec:orgac24f5c}
+\begin{enumerate}
+\item 5 uL of template DNA\\
+\item 5 uL water\\
+\item 10 uL Gibson mix\\
+\end{enumerate}
+
+Incubate this mix 1h at 50ºC.
+
+\subsection{EtOH Purification}
+\label{sec:orgd34d048}
+\begin{enumerate}
+\item Add 2.5 volumes of EtOH.
+\item Add 1/10 of NaAc 3M and 2 uL of glycogen.
+\item Immerse in EtOH + carbonic niege to freeze and precipitate DNA.
+\item Spin for 30 min at 16,000 rpm at 4ºC.
+\item Discard the supernatant.
+\item Wash the pellet with 75\% EtOH and spin for 10 min at 16,000 rpm at 4C.
+\item Ressuspend the pellet in 10 uL of water.
+\end{enumerate}
+
+\subsection{Transformation of high electrocompetent E. coli cells}
+\label{sec:orga2c64ae}
+\begin{enumerate}
+\item Thaw the aliquot of E. coli in ice.
+\item In 0.1 cm cuvettes, pipette 25 uL of E. coli suspension and 2.5 uL of purified plasmid.
+\item Electroporate with the corresponding programme.
+\item Add 1 mL of recovery medium (aka SOC media).
+\item Pool the transformed cells in a 15 mL falcon.
+\item Prepare 3 LB + Amp agar plates and a seriate dilution of the culture (1/1000,1/2000,1/4000):
+\end{enumerate}
+
+\begin{center}
+\begin{tabular}{lll}
+\hline
+Dilution & Culture volume & Final volume\\
+\hline
+1/1000 &  & 200 uL\\
+1/2000 &  & 200 uL\\
+1/4000 &  & 200 uL\\
+\hline
+\end{tabular}
+\end{center}
+
+Plate this 200 uL in this plates and culture overnight at 37ºC.
+
+\begin{enumerate}
+\item Transfer the rest of the culture into 500 mL of liquid LB+Amp 1x (500 uL) and culture ON at 37C.
+\end{enumerate}
+
+\subsection{MaxiPrep NucleoBond Xtra Midi kit}
+\label{sec:orgdecb077}
+\begin{enumerate}
+\item Culture E. coli cells at 37C and at 180 rpm overnight.
+\item Harvest cells and centrifuge at 4500g at 4C for 15 min.
+\item Ressuspend the pellet in 12 mL of RES buffer, add 12 mL LYS buffer and wait 5 min at RT.
+\item Equilibrate the column with 25 mL of EQU buffer.
+\item Add 12 mL of NEU buffer to the lysate.
+\item Mix the tube and load the lysate into the column.
+\item 1st wash. Add 15 mL of buffer EQU.
+\item Discard the filter.
+\item 2nd wash. Add 25 mL of buffer WASH.
+\item Add 25 mL of ELU buffer.
+\item Add 10.5 mL of isopropanol, vortex and centrifuge at 4000 rpm for 1h at 4ºC.
+\item Discard the supernatant and add 4 mL of 70\% EtOH and centrifuge at 4000 rpm at 4C for 15 min.
+\item Discard the supernatant and ressupend the pellet in 100 uL of nuclease-free water.
+\item Quantify the library in a Nanodrop and leave the prep at 1ug/mL.
+\end{enumerate}
+
+\begin{center}
+\begin{tabular}{lll}
+\hline
+conc ng/uL & 260/280 & 260/230\\
+\hline
+ &  & \\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Cell culture}
+\label{sec:orgff5e73c}
+Cells grow at 25C with Schneider's Drosophila medium supplemented with 5\% FBS.
+
+To pass the cells, I take 5 mL of the culture + 15 mL of medium.
+
+\section{Transfection of Kc167 cells by electroporation}
+\label{sec:orgcf1c1aa}
+They are needed 20 milions cells per transfection.
+\begin{enumerate}
+\item Prepare as much plates as you need (1 plate for transfection) in order to get 20 milions cells at the day of transfection.
+\item Spin cells at 800g for 3 min.
+\item Remove the supernatant and resuspend the cells in 800 uL x number of transfections.
+\item Pipette 20 ug of DNA in an electroporation cuvette (Biorad, 0.4 cm gap).
+\item Add 800 uL of cell suspension and pipette up \& down 2-3 times.
+\item Electroporate at 1000 uF and 250 V.
+\item Wait 5 min.
+\item Transfer the cells into a 10 cm dish containing 10 mL of Schneider medium + 5\% FBS previously warmed at RT.
+\item Grow cells at 23ºC.
+\end{enumerate}
+
+\section{Kc167 conditioned medium}
+\label{sec:org2e788e6}
+\begin{enumerate}
+\item Spin the culture at 200g for 5 min.
+\item Take the supernatant and filter it with a 45 um filter carefully.
+\item Dilute the filtrate 1:1 with fresh Schneider Medium.
+\item Store at 4ºC.
+\end{enumerate}
+
+\section{Results and Conclusion}
+%Punts a tractar:
+%
+%?	Presentació de dades obtingudes (taules, imatges etc...)
+%
+%?	Resultats obtinguts (presentació i valoració).
+%
+%?	Opinió sobre el pràcticum (si ha resultat productiu, instructiu, si ha respost a les expectatives..)
+%
+%?	Conclusions i recomanacions
+%
+%?	Referències bibliogràfiques (si s?escauen)
+%
+%Podeu afegir qualsevol document relacionat amb el pràcticum que creieu oportú
+
+\section{Self-assessment}
+%Punts a tractar:
+%
+%?	Quin grau de compliment consideres que has fet?
+%
+%?	Avaluació pròpia i crítica sobre la teva participació en el pràcticum. Com valoraries aquesta assignatura.
+%
+%?	Adquisició de competències i habilitats desenvolupades a les pràctiques
+
+
+%%%%%%%%%%%%%%%
+% BIBLIOGRAPHY%
+%%%%%%%%%%%%%%%
+\bibliography{bib_p1} 
+\bibliographystyle{authordate3}
+
+\section*{Addendum}
+\subsection*{Primer sequences}
+
+
+\end{document}
