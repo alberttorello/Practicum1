@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.5)  16 JAN 2018 17:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.5)  24 JAN 2018 11:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -118,7 +118,7 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/01 v1.0k Graphics/color driver for pdftex
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
@@ -173,25 +173,74 @@ s
 \f@nch@O@olf=\skip53
 \f@nch@O@orf=\skip54
 )
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
+\c@tracingmulticols=\count103
+\mult@box=\box30
+\multicol@leftmargin=\dimen122
+\c@unbalance=\count104
+\c@collectmore=\count105
+\doublecol@number=\count106
+\multicoltolerance=\count107
+\multicolpretolerance=\count108
+\full@width=\dimen123
+\page@free=\dimen124
+\premulticols=\dimen125
+\postmulticols=\dimen126
+\multicolsep=\skip55
+\multicolbaselineskip=\skip56
+\partial@page=\box31
+\last@line=\box32
+\maxbalancingoverflow=\dimen127
+\mult@rightbox=\box33
+\mult@grightbox=\box34
+\mult@gfirstbox=\box35
+\mult@firstbox=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\@tempa=\box53
+\c@columnbadness=\count109
+\c@finalcolumnbadness=\count110
+\last@try=\dimen128
+\multicolovershoot=\dimen129
+\multicolundershoot=\dimen130
+\mult@nat@firstbox=\box54
+\colbreak@box=\box55
+\mc@col@check@num=\count111
+)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/array.sty
 Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
-\col@sep=\dimen122
-\extrarowheight=\dimen123
+\col@sep=\dimen131
+\extrarowheight=\dimen132
 \NC@list=\toks25
-\extratabsurround=\skip55
-\backup@length=\skip56
+\extratabsurround=\skip57
+\backup@length=\skip58
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
-\ttl@box=\box30
-\beforetitleunit=\skip57
-\aftertitleunit=\skip58
-\ttl@plus=\dimen124
-\ttl@minus=\dimen125
+\ttl@box=\box56
+\beforetitleunit=\skip59
+\aftertitleunit=\skip60
+\ttl@plus=\dimen133
+\ttl@minus=\dimen134
 \ttl@toksa=\toks26
-\titlewidth=\dimen126
-\titlewidthlast=\dimen127
-\titlewidthfirst=\dimen128
+\titlewidth=\dimen135
+\titlewidthlast=\dimen136
+\titlewidthfirst=\dimen137
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/titlesec/block.tss
 File: block.tss 2016/03/15
@@ -248,14 +297,14 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen129
-\Hy@linkcounter=\count103
-\Hy@pagecounter=\count104
+\@linkdim=\dimen138
+\Hy@linkcounter=\count112
+\Hy@pagecounter=\count113
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count105
+\Hy@SavedSpaceFactor=\count114
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -267,17 +316,17 @@ Package hyperref Info: Plain pages OFF on input line 4513.
 Package hyperref Info: Backreferencing OFF on input line 4518.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4751.
-\c@Hy@tempcnt=\count106
+\c@Hy@tempcnt=\count115
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5104.
-\XeTeXLinkMargin=\dimen130
-\Fld@menulength=\count107
-\Field@Width=\dimen131
-\Fld@charsize=\dimen132
+\XeTeXLinkMargin=\dimen139
+\Fld@menulength=\count116
+\Field@Width=\dimen140
+\Fld@charsize=\dimen141
 Package hyperref Info: Hyper figures OFF on input line 6358.
 Package hyperref Info: Link nesting OFF on input line 6363.
 Package hyperref Info: Hyper index ON on input line 6366.
@@ -287,31 +336,31 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6383.
 Package hyperref Info: PDF/A mode OFF on input line 6388.
 LaTeX Info: Redefining \ref on input line 6428.
 LaTeX Info: Redefining \pageref on input line 6432.
-\Hy@abspage=\count108
-\c@Item=\count109
-\c@Hfootnote=\count110
+\Hy@abspage=\count117
+\c@Item=\count118
+\c@Hfootnote=\count119
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
-\Fld@listcount=\count111
-\c@bookmark@seq@number=\count112
+\Fld@listcount=\count120
+\c@bookmark@seq@number=\count121
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip59
+\Hy@SectionHShift=\skip61
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip60
-\bibsep=\skip61
+\bibhang=\skip62
+\bibsep=\skip63
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count113
+\c@NAT@ctr=\count122
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
@@ -321,16 +370,16 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count114
-\calc@Bcount=\count115
-\calc@Adimen=\dimen133
-\calc@Bdimen=\dimen134
-\calc@Askip=\skip62
-\calc@Bskip=\skip63
+\calc@Acount=\count123
+\calc@Bcount=\count124
+\calc@Adimen=\dimen142
+\calc@Bdimen=\dimen143
+\calc@Askip=\skip64
+\calc@Bskip=\skip65
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count116
-\calc@Cskip=\skip64
+\calc@Ccount=\count125
+\calc@Cskip=\skip66
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
@@ -352,55 +401,55 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 ))
-\AM@pagewidth=\dimen135
-\AM@pageheight=\dimen136
+\AM@pagewidth=\dimen144
+\AM@pageheight=\dimen145
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
 )
-\AM@pagebox=\box31
+\AM@pagebox=\box57
 \AM@global@opts=\toks27
 \AM@toc@title=\toks28
-\c@AM@survey=\count117
-\AM@templatesizebox=\box32
+\c@AM@survey=\count126
+\AM@templatesizebox=\box58
 )
 (./practicum1.aux)
 \openout1 = `practicum1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 47.
-LaTeX Font Info:    Try loading font information for LGR+cmr on input line 47.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 49.
+LaTeX Font Info:    Try loading font information for LGR+cmr on input line 49.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
 
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count118
-\scratchdimen=\dimen137
-\scratchbox=\box33
-\nofMPsegments=\count119
-\nofMParguments=\count120
+\scratchcounter=\count127
+\scratchdimen=\dimen146
+\scratchbox=\box59
+\nofMPsegments=\count128
+\nofMParguments=\count129
 \everyMPshowfont=\toks29
-\MPscratchCnt=\count121
-\MPscratchDim=\dimen138
-\MPnumerator=\count122
-\makeMPintoPDFobject=\count123
+\MPscratchCnt=\count130
+\MPscratchDim=\dimen147
+\MPnumerator=\count131
+\makeMPintoPDFobject=\count132
 \everyMPtoPDFconversion=\toks30
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -455,20 +504,20 @@ e
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 47.
-\AtBeginShipoutBox=\box34
-Package hyperref Info: Link coloring OFF on input line 47.
+(lastpage)             ! on input line 49.
+\AtBeginShipoutBox=\box60
+Package hyperref Info: Link coloring OFF on input line 49.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count124
+\c@section@level=\count133
 )
-LaTeX Info: Redefining \ref on input line 47.
-LaTeX Info: Redefining \pageref on input line 47.
-LaTeX Info: Redefining \nameref on input line 47.
+LaTeX Info: Redefining \ref on input line 49.
+LaTeX Info: Redefining \pageref on input line 49.
+LaTeX Info: Redefining \nameref on input line 49.
 
 (./practicum1.out) (./practicum1.out)
 \@outlinefile=\write3
@@ -483,12 +532,12 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 50.
+LaTeX Font Info:    Try loading font information for U+msa on input line 52.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 50.
+LaTeX Font Info:    Try loading font information for U+msb on input line 52.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -497,25 +546,28 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Warning: No \author given.
 
 
-Overfull \hbox (9.1791pt too wide) in paragraph at lines 58--59
+Overfull \hbox (9.1791pt too wide) in paragraph at lines 60--61
  []|\OT1/cmr/m/n/12 alberttorelloperez@gmail.com| 
  []
 
 
-Overfull \hbox (44.7002pt too wide) in paragraph at lines 53--63
+Overfull \hbox (44.7002pt too wide) in paragraph at lines 55--65
 [][] 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 80.
-(/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+(./practicum1.toc
+Underfull \hbox (badness 7133) in paragraph at lines 16--16
+ [][] [][]\OT1/cmr/m/n/12 MaxiPrep Nu-cle-oBond 
+ []
+
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 80.
-<cap.jpg, id=88, 944.8098pt x 284.5029pt>
+\tf@toc=\write4
+\openout4 = `practicum1.toc'.
+
+<cap.jpg, id=143, 944.8098pt x 284.5029pt>
 File: cap.jpg Graphic file (type jpg)
 <use cap.jpg>
-Package pdftex.def Info: cap.jpg  used on input line 88.
+Package pdftex.def Info: cap.jpg  used on input line 71.
 (pdftex.def)             Requested size: 145.11053pt x 43.69376pt.
 
 
@@ -527,19 +579,49 @@ Package Fancyhdr Warning: \headheight is too small (32.0pt):
 [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
  <./cap.jpg>]
-<current.png, id=106, 919.435pt x 346.62833pt>
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 87.
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 87.
+File: cap.jpg Graphic file (type jpg)
+<use cap.jpg>
+Package pdftex.def Info: cap.jpg  used on input line 101.
+(pdftex.def)             Requested size: 145.11053pt x 43.69376pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (32.0pt): 
+ Make it at least 48.0438pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2]
+<current.png, id=180, 919.435pt x 346.62833pt>
 File: current.png Graphic file (type png)
 <use current.png>
-Package pdftex.def Info: current.png  used on input line 99.
+Package pdftex.def Info: current.png  used on input line 106.
 (pdftex.def)             Requested size: 483.69687pt x 182.35811pt.
+<nucleus.png, id=189, 966.61125pt x 545.03625pt>
+File: nucleus.png Graphic file (type png)
+<use nucleus.png>
+Package pdftex.def Info: nucleus.png  used on input line 124.
+(pdftex.def)             Requested size: 338.58632pt x 190.91524pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<pev.png, id=198, 1165.35374pt x 414.54875pt>
+File: pev.png Graphic file (type png)
+<use pev.png>
+Package pdftex.def Info: pev.png  used on input line 133.
+(pdftex.def)             Requested size: 483.69687pt x 172.05981pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 File: cap.jpg Graphic file (type jpg)
 <use cap.jpg>
-Package pdftex.def Info: cap.jpg  used on input line 144.
+Package pdftex.def Info: cap.jpg  used on input line 138.
 (pdftex.def)             Requested size: 145.11053pt x 43.69376pt.
 
 Package Fancyhdr Warning: \headheight is too small (32.0pt): 
@@ -547,66 +629,10 @@ Package Fancyhdr Warning: \headheight is too small (32.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2 <./current.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 193--194
-
- []
-
+[3 <./current.png>]
 File: cap.jpg Graphic file (type jpg)
 <use cap.jpg>
-Package pdftex.def Info: cap.jpg  used on input line 204.
-(pdftex.def)             Requested size: 145.11053pt x 43.69376pt.
-
-Package Fancyhdr Warning: \headheight is too small (32.0pt): 
- Make it at least 48.0438pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 211--212
-
- []
-
-
-Overfull \hbox (14.64946pt too wide) in paragraph at lines 236--237
-[]\OT1/cmr/m/n/12 Prepare 3 LB + Amp agar plates and a se-ri-ate di-lu-tion of 
-the cul-ture (1/1000,1/2000,1/4000): 
- []
-
-File: cap.jpg Graphic file (type jpg)
-<use cap.jpg>
-Package pdftex.def Info: cap.jpg  used on input line 261.
-(pdftex.def)             Requested size: 145.11053pt x 43.69376pt.
-
-Package Fancyhdr Warning: \headheight is too small (32.0pt): 
- Make it at least 48.0438pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[4]
-File: cap.jpg Graphic file (type jpg)
-<use cap.jpg>
-Package pdftex.def Info: cap.jpg  used on input line 303.
+Package pdftex.def Info: cap.jpg  used on input line 171.
 (pdftex.def)             Requested size: 145.11053pt x 43.69376pt.
 
 
@@ -615,23 +641,50 @@ Package Fancyhdr Warning: \headheight is too small (32.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5] (./practicum1.bbl
+[4 <./nucleus.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
+
+ []
+
 File: cap.jpg Graphic file (type jpg)
 <use cap.jpg>
-Package pdftex.def Info: cap.jpg  used on input line 48.
+Package pdftex.def Info: cap.jpg  used on input line 210.
 (pdftex.def)             Requested size: 145.11053pt x 43.69376pt.
-
 
 Package Fancyhdr Warning: \headheight is too small (32.0pt): 
  Make it at least 48.0438pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6]) 
-AED: lastpage setting LastPage
+[5 <./pev.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
+
+ []
+
 File: cap.jpg Graphic file (type jpg)
 <use cap.jpg>
-Package pdftex.def Info: cap.jpg  used on input line 351.
+Package pdftex.def Info: cap.jpg  used on input line 269.
+(pdftex.def)             Requested size: 145.11053pt x 43.69376pt.
+
+Package Fancyhdr Warning: \headheight is too small (32.0pt): 
+ Make it at least 48.0438pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6]
+Overfull \hbox (34.4937pt too wide) in paragraph at lines 295--296
+[]\OT1/cmr/m/n/12 Prepare 3 LB + Ampi-cillin agar plates and a di-lu-tion bank 
+of the cul-ture (1/1000,1/2000,1/4000): 
+ []
+
+File: cap.jpg Graphic file (type jpg)
+<use cap.jpg>
+Package pdftex.def Info: cap.jpg  used on input line 322.
 (pdftex.def)             Requested size: 145.11053pt x 43.69376pt.
 
 Package Fancyhdr Warning: \headheight is too small (32.0pt): 
@@ -640,33 +693,144 @@ Package Fancyhdr Warning: \headheight is too small (32.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 351.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 351.
+<bcdpcr_gel_20161028.jpg, id=272, 835.12pt x 648.4225pt>
+File: bcdpcr_gel_20161028.jpg Graphic file (type jpg)
+<use bcdpcr_gel_20161028.jpg>
+Package pdftex.def Info: bcdpcr_gel_20161028.jpg  used on input line 374.
+(pdftex.def)             Requested size: 338.58632pt x 262.8966pt.
+File: cap.jpg Graphic file (type jpg)
+<use cap.jpg>
+Package pdftex.def Info: cap.jpg  used on input line 377.
+(pdftex.def)             Requested size: 145.11053pt x 43.69376pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (32.0pt): 
+ Make it at least 48.0438pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8]
+<gfp_sb.jpg, id=301, 1365.1pt x 1027.84pt>
+File: gfp_sb.jpg Graphic file (type jpg)
+<use gfp_sb.jpg>
+Package pdftex.def Info: gfp_sb.jpg  used on input line 417.
+(pdftex.def)             Requested size: 290.22107pt x 218.51897pt.
+File: cap.jpg Graphic file (type jpg)
+<use cap.jpg>
+Package pdftex.def Info: cap.jpg  used on input line 420.
+(pdftex.def)             Requested size: 145.11053pt x 43.69376pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (32.0pt): 
+ Make it at least 48.0438pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9 <./bcdpcr_gel_20161028.jpg>]
+<facs.jpg, id=308, 869.2475pt x 783.92876pt>
+File: facs.jpg Graphic file (type jpg)
+<use facs.jpg>
+Package pdftex.def Info: facs.jpg  used on input line 425.
+(pdftex.def)             Requested size: 290.22107pt x 261.73558pt.
+File: cap.jpg Graphic file (type jpg)
+<use cap.jpg>
+Package pdftex.def Info: cap.jpg  used on input line 443.
+(pdftex.def)             Requested size: 145.11053pt x 43.69376pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (32.0pt): 
+ Make it at least 48.0438pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10 <./gfp_sb.jpg> <./facs.jpg>] (./practicum1.bbl
+File: cap.jpg Graphic file (type jpg)
+<use cap.jpg>
+Package pdftex.def Info: cap.jpg  used on input line 66.
+(pdftex.def)             Requested size: 145.11053pt x 43.69376pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (32.0pt): 
+ Make it at least 48.0438pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11])
+Overfull \hbox (9.54546pt too wide) in paragraph at lines 458--459
+[]\OT1/cmr/m/n/12 GAT155: AGATCG-GAA-GAGCGTCGT-G-TAGGGAAA-GAGT-G-TAAAG-GCAAT-GC
+-TAC-
+ []
+
+
+Overfull \hbox (16.45915pt too wide) in paragraph at lines 459--460
+[]\OT1/cmr/m/n/12 GAT385: ACGCTCTTC-C-GATCTNNNNNNNNNNNNNNNNNNNNCAT-GC-TAGTTGTG-
+
+ []
+
+<P9_pT2_promoter10_GFP_bcd-sequence-2.jpg, id=322, 497.2176pt x 485.6544pt>
+File: P9_pT2_promoter10_GFP_bcd-sequence-2.jpg Graphic file (type jpg)
+<use P9_pT2_promoter10_GFP_bcd-sequence-2.jpg>
+Package pdftex.def Info: P9_pT2_promoter10_GFP_bcd-sequence-2.jpg  used on inpu
+t line 466.
+(pdftex.def)             Requested size: 338.58632pt x 330.7297pt.
+<HSP_SB-sequence.jpg, id=323, 504.4446pt x 459.6372pt>
+File: HSP_SB-sequence.jpg Graphic file (type jpg)
+<use HSP_SB-sequence.jpg>
+Package pdftex.def Info: HSP_SB-sequence.jpg  used on input line 473.
+(pdftex.def)             Requested size: 338.58632pt x 308.50938pt.
+File: cap.jpg Graphic file (type jpg)
+<use cap.jpg>
+Package pdftex.def Info: cap.jpg  used on input line 476.
+(pdftex.def)             Requested size: 145.11053pt x 43.69376pt.
+
+Package Fancyhdr Warning: \headheight is too small (32.0pt): 
+ Make it at least 48.0438pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12 <./P9_pT2_promoter10_GFP_bcd-sequence-2.jpg>]
+
+AED: lastpage setting LastPage
+File: cap.jpg Graphic file (type jpg)
+<use cap.jpg>
+Package pdftex.def Info: cap.jpg  used on input line 478.
+(pdftex.def)             Requested size: 145.11053pt x 43.69376pt.
+
+Package Fancyhdr Warning: \headheight is too small (32.0pt): 
+ Make it at least 48.0438pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13 <./HSP_SB-sequence.jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 478.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 478.
  (./practicum1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 351.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 351.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 478.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 478.
 Package rerunfilecheck Info: File `practicum1.out' has not changed.
-(rerunfilecheck)             Checksum: BC42A47B17D0747FB0FE55D276A15363;1348.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 351.
+(rerunfilecheck)             Checksum: E9F8B6676A0333F9BAF3AEAEC98F4615;2002.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 478.
  ) 
 Here is how much of TeX's memory you used:
- 8620 strings out of 492980
- 123617 string characters out of 6132510
- 228957 words of memory out of 5000000
- 11974 multiletter control sequences out of 15000+600000
- 13358 words of font info for 51 fonts, out of 8000000 for 9000
+ 8813 strings out of 492980
+ 126840 string characters out of 6132510
+ 247501 words of memory out of 5000000
+ 12140 multiletter control sequences out of 15000+600000
+ 13717 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,15n,43p,561b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,16n,43p,1054b,449s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pf
+b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pf
+b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
 /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></us
 r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
 /local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on practicum1.pdf (7 pages, 808167 bytes).
+Output written on practicum1.pdf (13 pages, 3239097 bytes).
 PDF statistics:
- 245 PDF objects out of 1000 (max. 8388607)
- 224 compressed objects within 3 object streams
- 85 named destinations out of 1000 (max. 500000)
- 171 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 385 PDF objects out of 1000 (max. 8388607)
+ 342 compressed objects within 4 object streams
+ 98 named destinations out of 1000 (max. 500000)
+ 270 words of extra memory for PDF output out of 10000 (max. 10000000)
 

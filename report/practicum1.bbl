@@ -16,11 +16,6 @@
   cells}.
 \newblock {\em Nature Protocols}, {\bf 9}(6), 1255--1281.
 
-\bibitem[\protect\citename{Corrales, }2017]{corralesphd}
-{\sc Corrales, Marc}. 2017.
-\newblock {\em Text in context: Chromatin effects in gene regulation}.
-\newblock Ph.D. thesis, Universitat Pompeu Fabra.
-
 \bibitem[\protect\citename{Corrales {\em et~al.\ }\relax, }2017]{Corrales2017}
 {\sc Corrales, Marc, Rosado, Ar{\'{a}}nzazu, Cortini, Ruggero, van Arensbergen,
   Joris, van Steensel, Bas, \& Filion, Guillaume~J}. 2017.
@@ -34,6 +29,22 @@
   Silencing in Drosophila}.
 \newblock {\em Cold Spring Harbor Perspectives in Biology}, {\bf 5}, 1--26.
 
+\bibitem[\protect\citename{Filion {\em et~al.\ }\relax, }2010]{Filion2010}
+{\sc Filion, Guillaume~J., van Bemmel, Joke~G., Braunschweig, Ulrich, Talhout,
+  Wendy, Kind, Jop, Ward, Lucas~D., Brugman, Wim, de~Castro, In??s~J.,
+  Kerkhoven, Ron~M., Bussemaker, Harmen~J., \& van Steensel, Bas}. 2010.
+\newblock {Systematic Protein Location Mapping Reveals Five Principal Chromatin
+  Types in Drosophila Cells}.
+\newblock {\em Cell}, {\bf 143}, 212--224.
+
+\bibitem[\protect\citename{Gibson {\em et~al.\ }\relax, }2009]{Gibson2009}
+{\sc Gibson, Daniel~G, Young, Lei, Chuang, Ray-Yuan, Venter, J~Craig,
+  Hutchison, Clyde~a, Smith, Hamilton~O, Iii, Clyde A~Hutchison, \& America,
+  Nature}. 2009.
+\newblock {Enzymatic assembly of DNA molecules up to several hundred
+  kilobases.}
+\newblock {\em Nature methods}, {\bf 6}(5), 343--5.
+
 \bibitem[\protect\citename{M{\'{a}}t{\'{e}}s {\em et~al.\ }\relax,
   }2009]{Mates2009}
 {\sc M{\'{a}}t{\'{e}}s, Lajos, Chuah, Marinee K~L, Belay, Eyayu, Jerchow,
@@ -45,5 +56,11 @@
 \newblock {Molecular evolution of a novel hyperactive Sleeping Beauty
   transposase enables robust stable gene transfer in vertebrates}.
 \newblock {\em Nature Genetics}, {\bf 41}(6), 753--761.
+
+\bibitem[\protect\citename{Rego {\em et~al.\ }\relax, }2008]{Rego2008}
+{\sc Rego, A., Sinclair, P.~B., Tao, W., Kireev, I., \& Belmont, A.~S.} 2008.
+\newblock {The facultative heterochromatin of the inactive X chromosome has a
+  distinctive condensed ultrastructure}.
+\newblock {\em Journal of Cell Science}, {\bf 121}(7), 1119--1127.
 
 \end{thebibliography}

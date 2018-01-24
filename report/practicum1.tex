@@ -23,6 +23,8 @@
 \raggedbottom
 \providecommand{\tabularnewline}{\\}
 
+\usepackage{multicol}
+
 \usepackage{array}
 
 \usepackage{titlesec}
@@ -48,7 +50,7 @@
 \vspace{-2cm}
 \maketitle
 \thispagestyle{fancy}
-\vspace{-2.7cm}
+\vspace{-2cm}
 \begin{table}[H]
 \begin{tabular}{c>{\centering}p{3cm}|c>{\centering}p{5cm}}
 \hline 
@@ -62,35 +64,40 @@ Centre for Genomic Regulation\tabularnewline
 \end{tabular}
 \end{table}
 
+\begin{multicols}{2}
+\tableofcontents
+\end{multicols}
+
+\newpage
 \section{Introduction}
 %En aquesta introducció ha de figurar una breu descripció del lloc on s?ha realitzat el pràcticum; en què va consistir aquest pràcticum, així com el propòsit general de l?entitat on hi participes.
 \subsection{Mission of the CRG}
-The Centre for Genomic Regulation (CRG) is an international biomedical research institute of excellence, created in December 2000. It is a non-profit foundation funded by the Catalan Government through the Departments of Economy \& Knowledge and Health, the Spanish Ministry of Economy, Industry and Competitiveness, the "la Caixa" Banking Foundation, and includes the participation of Pompeu Fabra University.
+According to its website, the Centre for Genomic Regulation (CRG) is an international biomedical research institute of excellence, created in December 2000. It is a non-profit foundation funded by the Catalan Government through the Departments of Economy \& Knowledge and Health, the Spanish Ministry of Economy, Industry and Competitiveness, the "la Caixa" Banking Foundation, and includes the participation of Pompeu Fabra University.
 
-The mission of the CRG is to discover and advance knowledge for the benefit of society, public health and economic prosperity.
+They also stated that the mission of the CRG is to discover and advance knowledge for the benefit of society, public health and economic prosperity.
 The CRG believes that the medicine of the future depends on the ground-breaking science of today. This requires an interdisciplinary scientific team focused on understanding the complexity of life from the genome to the cell to a whole organism and its interaction with the environment, offering an integrated view of genetic diseases.
 
 \subsection{Genome Architecture Lab}
 The Genome Architecture Laboratory was established in 2012 by Dr Guillaume Filion, who also supervised the work presented in this report.
 
-During this period, there has been established several research lines, but they have in common one thing: they are all focused on the understanding the chromatin and topology effects on gene expression and nuclear biology. As the sequence is not enough to explain the variation in gene expression, there is a need to identify the other factors involved in transcription.
+During this period, he has established several research lines, but they have in common one thing: they are all focused on the understanding the chromatin and topology effects on gene expression and nuclear biology. As the sequence is not enough to explain the variation in gene expression across time and space, there is a need to identify the other factors involved in transcription regulation.
 
 The most important research lines, among others not named, are:
 \begin{itemize}
 \item Position-dependent effects on housekeeping promoters in \textit{Drosophila}.
 \item Position effects on HIV integration and expression.
 \item Polymer physics of chromatin and properties of transcription factors mechanics.
-\item Nuclear organization by progesterone receptor and oestrogen receptor in breast cancer cells
+\item Nuclear organization driven by progesterone receptor and oestrogen receptor in breast cancer cells elucidated using super-resolution light microscopy.
 \end{itemize}
 
-\subsection{Purpose of the project}
+\subsection{Purpose of the project} \label{subsec:purpose}
 The aim of the project (not only of this practicum) is to understand the factors involved in the expression of a housekeeping promoter integrated into heterochromatin regions \citep{Corrales2017}. 
 
 To do that, I made use of TRIP technology. Briefly, TRIP consists in the use of a library of barcoded reporters (reporters with a 20-mer random sequence) that are integrated randomly in the genome using a transposase. This system allows us to relate the expression of each unique reporter to a location in the genome. Using this technology enable us to study the position effects in a high-throughput way \citep{Akhtar2013,Akhtar2014}.
 
-To address the question below, I cloned a barcoded before the poli-A tail. I amplified the library using electrocompetent \textit{E. coli} cells and cotransfected it into Kc167 cells (a Drosophila cell line) with the \textit{Sleeping Beauty} transposase \citep{Mates2009}. After growing the cells, I FACS selected them and seeded 1 cell/well in a 96-well plate and grow them. The goal of this process is to get isogenic populations (cells that come from a single cell progenitor) that putatively contain at least 1 integration.
+To address the question above, I cloned a barcoded before the poly-A tail. I amplified the library using electrocompetent \textit{E. coli} cells and cotransfected it into Kc167 cells (a \textit{Drosophila} cell line) with the \textit{Sleeping Beauty} transposase \citep{Mates2009}. After growing the cells, I FACS selected them and seeded 1 cell/well in a 96-well plate and grow them. The goal of this process is to get isogenic populations (cells that come from a single cell progenitor) that putatively contain at least 1 integration.
 
-After growing these clones, I harvested the cells and extract the genomic DNA in order to map the barcodes in the genome. The will of that is to get a clone with at least 2 mapped integrations, 1 in euchromatin and the other one in heterochromatin.
+After growing these clones, I harvested the cells and extracted the genomic DNA in order to map the barcodes in the genome. The will of that is to get a clone with at least 2 mapped integrations, 1 in euchromatin and the other one in heterochromatin.
 
 The workflow is summarized in figure \ref{fig:current}.
 
@@ -101,18 +108,38 @@ The workflow is summarized in figure \ref{fig:current}.
 \label{fig:current}
 \end{figure}
 
-This will allow us to screen this cells for factors involved in heterochromatic expression of this promoter of interest.
+This will allow us to screen this cells for factors involved in the heterochromatic expression of this promoter of interest.
 
 \subsection{Position effects variegation}
-As this practicum aims to disentangle the mechanisms of a position effects event, it is important to properly define it.
+As this practicum aims to disentangle the mechanisms of a position effects event, it is important to properly describe it.
 
-Defined by its pioneer Sarah Elgin, position effects variegation (PEV) results when a gene normally in euchromatin is juxtaposed with heterochromatin rearrangement or transposition. When heterochromatin packaging spreads across the heterochromatin/euchromatin border, it causes transcriptional silencing in a stochastic pattern. PEV is intensely studied in \textit{Drosophila} using the \textit{white} gene \citep{Elgin2013}.
+Defined by one of the most important contributors of the field Dr Sarah Elgin, position effects variegation (PEV) results when a gene normally in euchromatin is juxtaposed with heterochromatin rearrangement or transposition. When heterochromatin packaging spreads across the heterochromatin/euchromatin border, it causes transcriptional silencing in a stochastic pattern. 
 
-Traditionally, the definition of heterochromatin was mainly cytological. Heterochromatin was defined as such regions that appeared electrodense in transmission electron microscopy experiments.
+PEV is intensely studied in \textit{Drosophila} using the \textit{white} gene \citep{Elgin2013}. Muller in 1930 described a phenotype in \textit{Drosophila} in which the eye was variegating with some white facets altering the typical red pigmentation. This observation drove to the conclusion that \textit{white} gene was not mutated. After the examination of the polytene chromosomes, he confirmed that this phenotype was due to an inversion or rearrangement with one breakpoint within the pericentromeric heterochromatin \citep{Elgin2013}.
 
+Traditionally, the definition of heterochromatin was mainly cytological. Heterochromatin was defined as such regions that appeared electrodense in transmission electron microscopy experiments \citep{Rego2008}. The figure \ref{fig:nucleus} exemplifies this fact.
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\linewidth]{nucleus}
+\caption{H3K3mK27 (rabbit antibody) immunogold labelling decorating the Xi heterochromatin periphery. Arrowheads and arrows point to the Barr body; Nu, nucleolus. Picture adapted from \citeauthor{Rego2008}, \citeyear{Rego2008}.}
+\label{fig:nucleus}
+\end{figure}
+
+The screening of factors involved in PEV using the \textit{white} gene and a transposon led to the discovery of proteins and histone modifications that define heterochromatin by its biochemical features. As result of that, there were characterized the suppressors and the enhancers of variegation; proteins, if they were mutated, suppress or enhance the variegated phenotype. As a consensus, heterochromatin is composed of chromatin domains enriched with Su(var)3-9, HP1, and the HP1-interacting proteins LHR and HP6, and marked by H3K9me2 \citep{Elgin2013, Filion2010}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\linewidth]{pev}
+\caption{Schema of the X-ray induced rearrangement places the white locus, normally located in the distal euchromatin (white bar) of the X chromosome (see the top line),  25 kb from a breakpoint in the pericentric heterochromatin (black bar; bottom rearranged line). Spreading of heterochromatin packaging into the euchromatic domain results in silencing (causing a white eye in this case); loss of silencing in some cells during differentiation results in a variegating phenotype (bottom line, right). Adapted from \citeauthor{Elgin2013}, \citeyear{Elgin2013}}
+\label{fig:pev}
+\end{figure}
+
+\newpage
 \subsection{The TRIP technology}
+Following the thread exposed above (section \ref{subsec:purpose}), TRIP was developed to assay the position effects but in a genome-wide and parallel way. TRIP was, fundamentally, a combination of the traditional transgene reporter assay with random barcoding technology and high-throughput sequencing \citep{Akhtar2013}. As far as TRIP can be used to study diverse regulatory elements (promoters, enhancers, insulators) and DNA-binding proteins, here I used TRIP to study a promoter.
 
+TRIP is based on a large library of reporter constructs. These reporters include a short DNA sequence of 20 bp long, which I refer to as a barcode. These reporters are randomly integrated throughout the genome in a pool of cells of interest, and subsequent reporter activity is determined by the chromatin environment at the site of integration. The barcode associated with each reporter serves as a UMI (unique molecular identifier) for tracking of the reporter location and activity. The location is determined using an inverse PCR (iPCR)-based method, and the expression is quantified by Illumina sequencing of barcodes (as the barcode is integrated before the poly A tail). The count for each barcode in RNA is normalized by the corresponding count in genomic DNA \citep{Akhtar2014}.
 
 \section{Objectives and activities}\label{sec:objectives}
 %Punts a tractar:
@@ -135,12 +162,19 @@ Traditionally, the definition of heterochromatin was mainly cytological. Heteroc
 %
 %- Disseny experimental o pla de treball utilitzat.
 %
-%Anàlisi sobre la relació teoria- pràctica durant el període de desenvolupament del projecte
+% Anàlisi sobre la relació teoria- pràctica durant el període de desenvolupament del projecte.
 
 \subsection{Aim of the practicum}
+The main goal of this practicum is to get a complete barcoded library with enough complexity and integrate the reporters in Kc167 cells. Complexity is a term to refer to the diversity of barcodes, in other words, how many different barcodes contain the library.
 
+The first step of the library construction is to clone the promoter of interest upstream the reporter gene, in this case, GFP (Green Fluorescent Protein). After that, the barcode is added to the vector backbone by PCR using custom primers which one of them contains a 20-mer random (the primer sequences are in section \ref{sec:primers}) sequence obtaining a linearised sequence. Then, the template is destroyed by digesting it with DpnI. After purifying the PCR products, the plasmid is re-ligated with Gibson cloning \cite{Gibson2009}. Products are purified again and transformed to electrocompetent \textit{E. coli} cells in order to amplify the library. An important constraint here is to check the complexity of the library, in other words, to estimate the number of unique molecules you get (plasmids with a different barcode). It is considered a good library these ones with a complexity higher than 1,000,000. Then, the bacterial cultures are grown overnight and plasmid DNA is isolated using a commercial kit.
 
-\subsection{Barcoding PCR}
+Once the library is fully constructed, the library is co-transfected with a plasmid carrying the Sleeping Beauty transposase, which will allow the random integration of the barcoded reporters. Then, the cells are put in 2 heat-shocks at 37ºC in order to allow the transposase be expressed (it was cloned under the control of a thermo-inducible promoter) and because it is the optimal temperature for the transposase.
+
+3 days after transfection, GFP expression is checked by microscopy and FACS.
+
+\subsection{Experimental procedures}
+\subsubsection{Barcoding PCR}
 \label{sec:org4b6e281}
 The first step is to do the barcoding PCR according to this protocol:\\
 \begin{center}
@@ -149,12 +183,12 @@ The first step is to do the barcoding PCR according to this protocol:\\
 Reagent\\
 \hline
 10 ng plasmid\\
-2.5 uL primer GAT155\\
-2.5 uL primer GAT385\\
-10 uL GC buffer 10x\\
-1 uL dNTPs\\
-0.5 uL Phusion Polymerase\\
-32.5 uL water\\
+2.5 $\mu$L primer GAT155 10$\mu M$\\
+2.5 $\mu$L primer GAT385 10$\mu M$\\
+10 $\mu$L GC buffer 10x\\
+1 $\mu$L dNTPs 10 mM\\
+0.5 $\mu$L Phusion Polymerase\\
+32.5 $\mu$L water\\
 \hline
 \end{tabular}
 \end{center}
@@ -165,19 +199,19 @@ with this programme:\\
 \hline
 T & Time\\
 \hline
-98C & 2 min\\
-98C & 15 sec\\
-60C & 20 sec\\
-72C & 5 min\\
-x28 cycles & \\
-72C & 2 min\\
+98ºC & 2 min\\
+98ºC & 15 sec\\
+60ºC & 20 sec\\
+72ºC & 5 min\\
+x 28 cycles & \\
+72ºC & 2 min\\
 \hline
 \end{tabular}
 \end{center}
 
-Check the outcome of PCR with 1\% agarose gel.
+I checked the outcome of PCR in a 1\% agarose gel.
 
-\subsection{DpnI digestion}
+\subsubsection{DpnI digestion}
 \label{sec:orgd47708b}
 The recipe is:\\
 \begin{center}
@@ -185,137 +219,139 @@ The recipe is:\\
 \hline
 Reagent\\
 \hline
-45 uL BCR PCR product\\
-5 uL CutSmart Buffer 10x\\
-1 uL DpnI enzyme\\
+45 $\mu$L barcoding PCR product\\
+5 $\mu$L CutSmart Buffer 10x\\
+1 $\mu$L DpnI enzyme\\
 \hline
 \end{tabular}
 \end{center}
 
-1h at 37C and 20 min at 80C.\\
+I incubated the mix 1h at 37ºC and 20 min at 80ºC to deactivate the enzyme.
 
-\subsection{MinElute kit purification}
+\subsubsection{MinElute kit (Qiagen) purification}
 \label{sec:orgc9ff965}
+This step is necessary to clean up PCR products of primers, nucleotides and polymerase.
 \begin{enumerate}
-\item Add 5 volumes of PB buffer for 1 volume of PCR product and 10 uL of NaAc 3M.
+\item Add 5 volumes of PB buffer for 1 volume of PCR product and 10 $\mu$L of NaAc 3M.
 \item Put the column in a 2 mL collection tube.
 \item Spin the column 1 min at 13,000 rpm and discard the flow-through.
-\item Add 750 uL of PE buffer and spin at 13,000 rpm for 1 min. Discard the flow-through.
+\item Add 750 $\mu$L of PE buffer and spin at 13,000 rpm for 1 min. Discard the flow-through.
 \item Spin for 2 min and replace the collection tube (1 mL tube).
-\item Elute in 10+10 uL EB buffer. Wait 5 min and spin for 1 min.
+\item Elute in 10 $\mu$L EB buffer. Repeat the action and wait 5 min and spin for 1 min.
 \end{enumerate}
 
-\subsection{Gibson Cloning}
+\subsubsection{Gibson Cloning}
 \label{sec:orgac24f5c}
-\begin{enumerate}
-\item 5 uL of template DNA\\
-\item 5 uL water\\
-\item 10 uL Gibson mix\\
-\end{enumerate}
+\begin{table}[H]
+\centering
+\begin{tabular}{l}
+\hline
+Reagent \\
+\hline
+5 $\mu$L of template DNA
+ \\ 
+5 $\mu$L of water
+ \\ 
+ 10 $\mu$L of Gibson mix \\
+\hline 
+\end{tabular}
+\end{table} 
+I incubated this mix 1h at 50ºC.
 
-Incubate this mix 1h at 50ºC.
-
-\subsection{EtOH Purification}
+\subsubsection{Ethanol precipitation}
 \label{sec:orgd34d048}
 \begin{enumerate}
-\item Add 2.5 volumes of EtOH.
-\item Add 1/10 of NaAc 3M and 2 uL of glycogen.
-\item Immerse in EtOH + carbonic niege to freeze and precipitate DNA.
-\item Spin for 30 min at 16,000 rpm at 4ºC.
+\item Add 2.5 volumes of pure ethanol.
+\item Add 1/10 of sodium acetate 3M and 2 $\mu$L of glycogen.
+\item Immerse in a mix of ethanol and carbonic snow or store it in a -80ºC freezer 1 hour to freeze and precipitate DNA.
+\item Centrifuge for 45 min at 16,000 rpm at 4ºC.
 \item Discard the supernatant.
-\item Wash the pellet with 75\% EtOH and spin for 10 min at 16,000 rpm at 4C.
-\item Ressuspend the pellet in 10 uL of water.
+\item Wash the pellet with 75\% ethanol and centrifuge for 15 min at 16,000 rpm at 4C.
+\item Resuspend the pellet in 10 $\mu$L of water.
 \end{enumerate}
 
-\subsection{Transformation of high electrocompetent E. coli cells}
+After that, I checked the concentration of DNA:
+\begin{center}
+\begin{tabular}{lll}
+\hline
+conc ng/$\mu$L & 260/280 & 260/230\\
+\hline
+508 & 1,62 & 1,92 \\
+\hline
+\end{tabular}
+\end{center}
+
+
+\subsubsection{Transformation of high electrocompetent \textit{E. coli} cells}
 \label{sec:orga2c64ae}
+I diluted the plasmid from the previous experiment to 125 ng/$\mu$L so it is the optimal concentration for electroporation.
+
 \begin{enumerate}
-\item Thaw the aliquot of E. coli in ice.
-\item In 0.1 cm cuvettes, pipette 25 uL of E. coli suspension and 2.5 uL of purified plasmid.
-\item Electroporate with the corresponding programme.
-\item Add 1 mL of recovery medium (aka SOC media).
+\item Thaw an aliquot of electrocompetent \textit{E. coli} in ice.
+\item In 0.1 cm electroporation cuvettes (Bio-Rad), pipette 25 $\mu$L of \textit{E. coli} cell suspension and 2.5 $\mu$L of the purified plasmid.
+\item Electroporate with the corresponding programme (1 pulse of 1,80 kV) using the MicroPulser Electroporator from Bio-Rad.
+\item Add 1 mL of recovery medium (SOC media).
 \item Pool the transformed cells in a 15 mL falcon.
-\item Prepare 3 LB + Amp agar plates and a seriate dilution of the culture (1/1000,1/2000,1/4000):
-\end{enumerate}
+\item Prepare 3 LB + Ampicillin agar plates and a dilution bank of the culture (1/1000,1/2000,1/4000):
 
 \begin{center}
 \begin{tabular}{lll}
 \hline
 Dilution & Culture volume & Final volume\\
 \hline
-1/1000 &  & 200 uL\\
-1/2000 &  & 200 uL\\
-1/4000 &  & 200 uL\\
+1/1000 & 4 $\mu$L & 200 $\mu$L\\
+1/2000 & 2 $\mu$L & 200 $\mu$L\\
+1/4000 & 1 $\mu$L & 200 $\mu$L\\
 \hline
 \end{tabular}
 \end{center}
 
-Plate this 200 uL in this plates and culture overnight at 37ºC.
+\item Plate this 200 $\mu$L in this plates and culture overnight at 37ºC.
 
-\begin{enumerate}
-\item Transfer the rest of the culture into 500 mL of liquid LB+Amp 1x (500 uL) and culture ON at 37C.
+\item Transfer the rest of the culture into 500 mL of liquid LB + ampicillin 1X (500 $\mu$L of 1,000X stock) and culture overnight at 37ºC.
 \end{enumerate}
 
-\subsection{MaxiPrep NucleoBond Xtra Midi kit}
+\subsubsection{MaxiPrep NucleoBond Xtra Midi kit}
 \label{sec:orgdecb077}
 \begin{enumerate}
-\item Culture E. coli cells at 37C and at 180 rpm overnight.
-\item Harvest cells and centrifuge at 4500g at 4C for 15 min.
-\item Ressuspend the pellet in 12 mL of RES buffer, add 12 mL LYS buffer and wait 5 min at RT.
+\item Harvest cells by centrifuging at 4,500g at 4ºC for 15 min.
+\item Resuspend the pellet in 12 mL of RES buffer, add 12 mL LYS buffer and wait 5 min at RT.
 \item Equilibrate the column with 25 mL of EQU buffer.
 \item Add 12 mL of NEU buffer to the lysate.
 \item Mix the tube and load the lysate into the column.
-\item 1st wash. Add 15 mL of buffer EQU.
+\item First wash. Add 15 mL of buffer EQU.
 \item Discard the filter.
-\item 2nd wash. Add 25 mL of buffer WASH.
+\item Second wash. Add 25 mL of buffer WASH.
 \item Add 25 mL of ELU buffer.
-\item Add 10.5 mL of isopropanol, vortex and centrifuge at 4000 rpm for 1h at 4ºC.
-\item Discard the supernatant and add 4 mL of 70\% EtOH and centrifuge at 4000 rpm at 4C for 15 min.
-\item Discard the supernatant and ressupend the pellet in 100 uL of nuclease-free water.
-\item Quantify the library in a Nanodrop and leave the prep at 1ug/mL.
+\item Add 10.5 mL of isopropanol, vortex and centrifuge at 4,000 rpm for 1h at 4ºC.
+\item Discard the supernatant and add 4 mL of 70\% ethanol and centrifuge at 4,000 rpm at 4ºC for 15 min.
+\item Discard the supernatant and resupend the pellet in 100 $\mu$L of nuclease-free water.
+\item Quantify the library in a Nanodrop and leave the maxiprep at 1$\mu$g/mL.
 \end{enumerate}
 
-\begin{center}
-\begin{tabular}{lll}
-\hline
-conc ng/uL & 260/280 & 260/230\\
-\hline
- &  & \\
-\hline
-\end{tabular}
-\end{center}
-
-\section{Cell culture}
+\subsubsection{Cell culture and transfection}
 \label{sec:orgff5e73c}
-Cells grow at 25C with Schneider's Drosophila medium supplemented with 5\% FBS.
+Kc167 cells were grown at 25ºC with Schneider's \textit{Drosophila} medium supplemented with 5\% FBS and antibiotics. Cells were passed twice a week with a split ratio 1/4.
 
-To pass the cells, I take 5 mL of the culture + 15 mL of medium.
-
-\section{Transfection of Kc167 cells by electroporation}
-\label{sec:orgcf1c1aa}
-They are needed 20 milions cells per transfection.
+They are needed 20 million cells per transfection.
 \begin{enumerate}
-\item Prepare as much plates as you need (1 plate for transfection) in order to get 20 milions cells at the day of transfection.
-\item Spin cells at 800g for 3 min.
-\item Remove the supernatant and resuspend the cells in 800 uL x number of transfections.
-\item Pipette 20 ug of DNA in an electroporation cuvette (Biorad, 0.4 cm gap).
-\item Add 800 uL of cell suspension and pipette up \& down 2-3 times.
-\item Electroporate at 1000 uF and 250 V.
+\item Prepare as many plates as you need (1 plate for transfection) in order to get 20 million cells on the day of transfection.
+\item Centrifuge the culture at 800g for 3 min.
+\item Remove the supernatant and resuspend the cells in 800 $\mu$L x number of transfections.
+\item Pipette 20 $\mu$g of DNA in an electroporation cuvette (Biorad, 0.4 cm gap). This 20 $\mu$g were distributed: 10 $\mu$g of barcoded plasmid and 10 $\mu$g of Sleeping Beauty plasmid.
+\item Add 800 $\mu$L of cell suspension and pipette up \& down 2-3 times.
+\item Electroporate at 1000 $\mu$F and 250 V.
 \item Wait 5 min.
-\item Transfer the cells into a 10 cm dish containing 10 mL of Schneider medium + 5\% FBS previously warmed at RT.
-\item Grow cells at 23ºC.
+\item Transfer the cells into a 10 cm cell culture dish containing 10 mL of Schneider medium + 5\% FBS previously warmed at RT.
+\item Grow cells at 25ºC.
 \end{enumerate}
 
-\section{Kc167 conditioned medium}
-\label{sec:org2e788e6}
-\begin{enumerate}
-\item Spin the culture at 200g for 5 min.
-\item Take the supernatant and filter it with a 45 um filter carefully.
-\item Dilute the filtrate 1:1 with fresh Schneider Medium.
-\item Store at 4ºC.
-\end{enumerate}
+The next day I did 2 heat shocks at 37ºC of two hours each, with at least four hours recovery between them and the day after I did another heat shock in order to induce the expression of the transposase.
+
+Then, I checked the expression of GFP by microscopy and flow cytometry.
 
 \section{Results and Conclusion}
+\subsection{Barcoding PCR}
 %Punts a tractar:
 %
 %?	Presentació de dades obtingudes (taules, imatges etc...)
@@ -330,6 +366,69 @@ They are needed 20 milions cells per transfection.
 %
 %Podeu afegir qualsevol document relacionat amb el pràcticum que creieu oportú
 
+%% Posar gels, imatges microscocopia, FACS, concentració de DNA.
+
+I checked the outcome of this PCR running a 1\% agarose gel:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{bcdpcr_gel_20161028.jpg}
+\caption{1\% agarose gel showing a 5000 bp band, according to the plasmid length. M is the molecular weight marker, C- is the negative control and 1,2,3,4 are the technical replicates.}
+\label{fig:bcdpcrgel20161028}
+\end{figure}
+
+The negative control is clean, so apparently, there is not unspecific amplification. The band around 5000 bp indicate the amplification runs well and the absence of other bands warranties the integrity of the vector.
+
+\subsection{Complexity of the library and plasmif yield}
+As I stated before, it is necessary to estimate the complexity of the barcodes; in other words, to estimate the number of different barcodes I got. For that purpose, I prepared 3 agar plates, in which I seeded a known culture volume to estimate the CFU (Colony Forming Units). I used CFU as an estimation if the complexity of the library.
+
+I got the following results:
+\begin{tabular}{c|c}
+\hline 
+Dilution & CFU/mL \\ 
+\hline 
+1/1000 & 1.000.000 \\ 
+ \hline 
+1/2000 & 1.160.000 \\ 
+\hline 
+1/4000 & 1.020.000 \\ 
+\hline 
+\end{tabular} 
+
+The complexity is about 1.000.000 CFU/mL (500.000.000 of different barcodes), which is satisfactory so I continued with the plasmid purification and isolation.
+
+After purifying the plasmid, I measured the concentration in a Nanodrop device (special spectrophotometer to measure the concentration of nucleic acids):
+
+\begin{center}
+\begin{tabular}{lll}
+\hline
+conc ng/$\mu$L & 260/280 & 260/230\\
+\hline
+2583 & 1.94 & 2.35\\
+\hline
+\end{tabular}
+\end{center}
+
+With this concentration, I reached a yield of 25 $\mu$g of the plasmid. I diluted the plasmid until got 1 ug/$\mu$L. I transfected Kc167 cells with this library.
+
+\subsection{GFP expression}
+3 days after the transfection, I checked the expression of GFP by microscopy and flow cytometry:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{gfp_sb.jpg}
+\caption{Photograph showing a representative field of cell culture 3 days after transfection. There were enough cells expressing GFP.}
+\label{fig:gfpsb}
+\end{figure}
+
+The flow cytometry showed that there were 10\% of cells expressing GFP with a geometric mean of 2.68.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{facs.jpg}
+\caption{Scatter plot of the events passed for the flow cytometer. Each dot is an event (actually a cell). P4 highlighted the population expressing GFP.}
+\label{fig:facs}
+\end{figure}
+
+The fraction of the population expressing GFP seems good and I continued with the experiments; which will be part of the Practicum II.
+
 \section{Self-assessment}
 %Punts a tractar:
 %
@@ -339,15 +438,41 @@ They are needed 20 milions cells per transfection.
 %
 %?	Adquisició de competències i habilitats desenvolupades a les pràctiques
 
+During the development of this practicum, I practised what I learnt about molecular biology, genetic engineering, cell culture and gene regulation.
+
+I accomplished the objectives set at the beginning of the practicum. However, I realized that research timings are very difficult to predict and they can change as the project goes on.
+
+Moreover, I also acquired new skills in molecular biology such as primer design, PCR setup, Sanger sequencing, plasmid manipulation and sample preparation for next-generation sequencing. I also applied cell biology-related techniques like FACS and fluorescence microscopy. As the range of techniques I used is so wide, I consider this practicum has been useful and productive.
+
 
 %%%%%%%%%%%%%%%
 % BIBLIOGRAPHY%
 %%%%%%%%%%%%%%%
 \bibliography{bib_p1} 
 \bibliographystyle{authordate3}
+\addcontentsline{toc}{section}{References}
 
-\section*{Addendum}
-\subsection*{Primer sequences}
+\section{Addendum}
+\subsection{Primer sequences}\label{sec:primers}
+\begin{itemize}
+\item GAT155: AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAAAGGCAATGCTACCAAATAC
+\item GAT385: ACGCTCTTCCGATCTNNNNNNNNNNNNNNNNNNNNCATGCTAGTTGTGGTTTGTC
+\end{itemize}
+
+\subsection{Plasmids}
+\subsubsection{GFP barcoded plasmid}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{P9_pT2_promoter10_GFP_bcd-sequence-2.jpg}
+\label{fig:p9pt2promoter10gfpbcd-sequence-2}
+\end{figure}
+
+\subsubsection{Sleeping Beauty plasmid}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{HSP_SB-sequence.jpg}
+\label{fig:hspsb-sequence}
+\end{figure}
 
 
 \end{document}
