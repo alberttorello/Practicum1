@@ -119,16 +119,16 @@ PEV is intensely studied in \textit{Drosophila} using the \textit{white} gene \c
 
 Traditionally, the definition of heterochromatin was mainly cytological. Heterochromatin was defined as such regions that appeared electrodense in transmission electron microscopy experiments \citep{Rego2008}. The figure \ref{fig:nucleus} exemplifies this fact.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.7\linewidth]{nucleus}
 \caption{H3K3mK27 (rabbit antibody) immunogold labelling decorating the Xi heterochromatin periphery. Arrowheads and arrows point to the Barr body; Nu, nucleolus. Picture adapted from \citeauthor{Rego2008}, \citeyear{Rego2008}.}
 \label{fig:nucleus}
 \end{figure}
 
-The screening of factors involved in PEV using the \textit{white} gene and a transposon led to the discovery of proteins and histone modifications that define heterochromatin by its biochemical features. As result of that, there were characterized the suppressors and the enhancers of variegation; proteins, if they were mutated, suppress or enhance the variegated phenotype. As a consensus, heterochromatin is composed of chromatin domains enriched with Su(var)3-9, HP1, and the HP1-interacting proteins LHR and HP6, and marked by H3K9me2 \citep{Elgin2013, Filion2010}.
+The screening of factors involved in PEV using the \textit{white} gene and a transposon led to the discovery of proteins and histone modifications that define heterochromatin by its biochemical features. As result of that, there were characterized the suppressors and the enhancers of variegation; proteins, if they were mutated, suppress or enhance the variegated phenotype. As a consensus, heterochromatin is composed of chromatin domains enriched with Su(var)3-9, HP1, and the HP1-interacting proteins LHR and HP6, and marked by H3K9me2 \citep{Elgin2013, Filion2010}. Figure \ref{fig:pev} exemplifies the classic view of gene silencing by heterochromatin invasion, in this case due to the inversion of the gene.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=1\linewidth]{pev}
 \caption{Schema of the X-ray induced rearrangement places the white locus, normally located in the distal euchromatin (white bar) of the X chromosome (see the top line),  25 kb from a breakpoint in the pericentric heterochromatin (black bar; bottom rearranged line). Spreading of heterochromatin packaging into the euchromatic domain results in silencing (causing a white eye in this case); loss of silencing in some cells during differentiation results in a variegating phenotype (bottom line, right). Adapted from \citeauthor{Elgin2013}, \citeyear{Elgin2013}}
@@ -192,6 +192,8 @@ Reagent\\
 \hline
 \end{tabular}
 \end{center}
+
+Note that GAT385 primer contains a 20 nucleotides random sequence, which is the barcode that we clone into the vector.
 
 with this programme:\\
 \begin{center}
@@ -368,7 +370,7 @@ Then, I checked the expression of GFP by microscopy and flow cytometry.
 
 %% Posar gels, imatges microscocopia, FACS, concentració de DNA.
 
-I checked the outcome of this PCR running a 1\% agarose gel:
+I checked the outcome of this PCR running a 1\% agarose gel, which is shown in figure \ref{fig:bcdpcrgel20161028}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\linewidth]{bcdpcr_gel_20161028.jpg}
@@ -411,15 +413,17 @@ conc ng/$\mu$L & 260/280 & 260/230\\
 With this concentration, I reached a yield of 25 $\mu$g of the plasmid. I diluted the plasmid until got 1 ug/$\mu$L. I transfected Kc167 cells with this library.
 
 \subsection{GFP expression}
-3 days after the transfection, I checked the expression of GFP by microscopy and flow cytometry:
+3 days after the transfection, I checked the expression of GFP by microscopy and flow cytometry. The picture (fig. \ref{fig:gfpsb}) below shows a representative field of a pool of Kc167 cells transfected with a barcoded library:
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.6\linewidth]{gfp_sb.jpg}
-\caption{Photograph showing a representative field of cell culture 3 days after transfection. There were enough cells expressing GFP.}
+\caption{Photograph showing a representative field of cell culture 3 days after transfection.}
 \label{fig:gfpsb}
 \end{figure}
 
-The flow cytometry showed that there were 10\% of cells expressing GFP with a geometric mean of 2.68.
+I concluded that there were enough cells expressing GFP
+
+The flow cytometry showed that there were 10\% of cells expressing GFP with a geometric mean of 2.68. Figure \ref{fig:facs} is the scatter plot resulting from the cytometric analysis of GFP.
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.6\linewidth]{facs.jpg}
